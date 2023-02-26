@@ -2,6 +2,12 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route("/")
+def show_landing_page() -> str:
+    print("Inside shop")
+    print("Will write more logic later on.")
+    return "Hello from Ashwini on the landing page v.0.0.2!"
+
 @app.route("/usa")
 def home() -> str:
     print("Inside ghar.")
